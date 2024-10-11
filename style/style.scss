@@ -1,0 +1,417 @@
+/* 
+
+* ===> all <===== *
+
+*/
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Ballo chettan 2", carsive;
+  transition: all 0.2s ease-in-out;
+}
+
+body {
+  margin: 0%;
+  /* font-family:"opan sans",sans-serift */
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+  overflow-x: hidden;
+  /* font-family:"Baloo paaji"cursive */
+}
+
+/* =============start screen responsive============= */
+.container {
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* big */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* smail */
+@media (min-width: 786px) {
+  .container {
+    width: 750px;
+  }
+}
+/* =============end screen responsive============== */
+/* ===========start nav bar=========== */
+.nav-bar{
+
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  width: 100%;
+  
+  .container{
+      display: flex;
+      justify-content: space-between;
+       border-bottom: solid 2px black;
+       height: 12vh;
+       align-items: center;
+           }
+
+     .links{
+
+        ul{
+            color: #fff;
+            gap: 2rem;
+            display: flex;
+            font-weight: bold;
+            align-items: center;
+            flex-direction: row-reverse;
+            li{
+              a:hover{
+                color: #fff;
+                
+              }
+            }
+          }
+
+          .home{
+            display: block;
+            padding: 10px 20px;
+            border: solid 3px #534688;
+            background-color: #534688;
+            color: #fff;
+          }
+          .home:hover{
+            color: #534688;
+            background-color: #fff;
+          }
+          }
+          
+.logo{
+
+     a{
+      color: #fff;
+       font-size: 30px;
+       font-weight: bold;
+      }
+    }
+
+}
+
+
+/* =========end nav bar============ */
+
+/* =========start landing page============ */
+
+.landing-page{
+  background-image:url("../imagis/header.jpg") ;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  .container{
+    width: fit-content;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1000;
+    position: relative;
+
+    h1{
+      font-size: 55px;
+      color: #444;
+    }
+
+    .h2{font-size: 55px;
+      color: black;
+     }
+     p{
+      font-size: 20px;
+      letter-spacing: 6px;
+      color: #111;
+      opacity: 0.8;
+      margin-bottom: 20px;
+     }
+     button{
+      border: solid 3px #534688;
+      padding: 10px 20px;
+      background-color: #534688;
+      color:#fff;
+      border-radius: 20px;
+      width: 150px;
+      cursor: pointer;
+     }
+     button:hover{
+      color: #534688;
+      background-color: #fff;
+     }
+  }
+  .background{
+position: absolute;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+background-image: linear-gradient(to top,#fff 0%, rgpa(105, 90, 166, 0,35) 99% rgpa(105, 90, 166, 0.5) 100%);
+
+  }
+}
+
+/* =========end landing page============ */
+
+
+/* =========start about============ */
+
+.about{
+  margin-bottom: 5rem;
+  .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+
+    .img-container{
+    img{
+      width: 100%;
+  height: 100%;
+      
+    }
+   }
+      
+        
+      
+    
+      }
+
+      .content{
+
+        width: 100%;
+       height: 100%;
+
+        h3{
+          font-size: 15px;
+          color: #999;
+          font-weight: 100;
+          letter-spacing: 2px;
+          margin-bottom: 10px;
+        }
+        h2{
+          font-size: 32px;
+          color: #695aa6;
+          margin-bottom: 1rem;
+        }
+        p{
+          font-size: 15px;
+          color: #999;
+          font-weight: 100;
+          margin-bottom: 10px;
+          line-height: 1.6;
+          margin-bottom: 2rem;
+        }
+        button{
+          border: solid 3px #534688;
+          padding: 10px 20px;
+          background-color: #534688;
+          color:#fff;
+          border-radius: 20px;
+          width: 150px;
+          cursor: pointer;
+        }
+        button:hover{
+          color: #534688;
+      background-color: #fff;
+        }
+      }
+    
+  }
+
+/* =========end about============ */
+
+/* =========start portfolio============ */
+
+.portfolio{
+  .container{
+    text-align: center;
+    .box-container{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+      
+        
+        img{
+         width: 90%;
+         height: 90%;
+        }
+        .parent-box{
+          position: relative;
+          width: 30%;
+        }
+      
+      .box-new{
+        opacity: 0;
+        background-color: #e1dfedc1;
+        top:0;
+        left:0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        h4{
+          font-size: 25px;
+          font-weight: 500;
+          font-family:"Baloo paaji",cursive ;
+          color:#695aa6 ;
+          margin-bottom:0.5rem ;
+        }
+        a{
+          color: #000;
+         
+        }
+       
+      } 
+      .parent-box:hover{
+        .box-new{
+          opacity: 1;
+          pointer-events:auto;
+        }
+      }
+    }
+    h3{
+      font-size: 32px;
+      font-family:"Baloo Paaji", cursive ;
+      color: #695aa6;
+    }
+    p{
+      font-size:14px ;
+      font-weight: 100;
+      margin-bottom: 3rem;
+    }
+    
+    
+  }
+}
+
+/* =========end portfolio============ */
+
+/* ===========start Bluo section========== */
+
+.bluo-section{
+  margin:4rem ;
+  margin-bottom: 4rem;
+  background-color: #695aa6;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .left{
+      p{
+        font-size: 21px;
+        color: #fff;
+        font-family:"Baloo Paaji", cursive ; 
+      }
+    }
+    .right{
+      button{
+        border: solid 3px #fff;
+        padding: 10px 20px;
+        background-color: #fff;
+        color:#695aa6;
+        border-radius: 20px;
+        width: 150px;
+        font-family:"Baloo Paaji", cursive ; 
+        font-size: 20px;
+        cursor: pointer;
+      }
+       
+    }
+  }
+}
+
+/* =========end Bluo section============ */
+
+/* =========end Bluo section============ */
+.test-sectino{
+  .container{
+    text-align: center;
+     margin-bottom:5rem ;
+    h5{
+      text-align: center;
+      font-size: 14px;
+      margin-bottom: 6px;
+      font-weight: 400;
+      opacity: 0.6;
+      letter-spacing: 0.6px;
+    }
+    h3{
+      text-align: center;
+      font-size: 32px;
+      font-weight: 500;
+      font-family:"Baloo Paaji", cursive ;  
+      color: #695aa6;
+      margin-bottom: 3rem;
+      font-weight: bold;
+    }
+    .parent-item{
+      display:flex;
+      justify-content: center;
+      gap: 3rem;
+      
+      .first{
+        border: solid 2px #534688 ;
+        padding: 30px ;
+        width: 50%;
+        display: flex;
+        flex-direction:row-reverse;
+        align-items: center;
+        position: relative;
+        padding-left: 50px;
+        .img-container{
+            width: 100%;
+          
+          img{
+           
+            width: 60px;
+            position: absolute;
+            left: -35px;
+            border-radius: 50%;
+          }
+        }
+        .text{
+          text-align: start;
+        }
+      }
+    }
+  }
+}
+
+/* =========end Bluo section============ */
+
+
+
+
+
+
+
+
+
